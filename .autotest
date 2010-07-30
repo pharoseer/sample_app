@@ -1,0 +1,4 @@
+PLATFORM = RUBY_PLATFORM unless defined? PLATFORM
+
+require 'autotest/growl'
+require 'redgreen/autotest'

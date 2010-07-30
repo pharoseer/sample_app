@@ -24,4 +24,15 @@ RSpec.configure do |config|
   # examples within a transaction, comment the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+  
+  #-----------------------------------------------------------------------------
+  # The proposed separator bug fix doesn't work.  It just blows up bigger.
+  #-----------------------------------------------------------------------------
+  #RSpec.configure do |c|
+  #  c.include RSpec::Rails::ControllerExampleGroup, :example_group => { 
+  #:file_path => /\bspec[\\\/]controllers[\\\/]/ }
+  #end
+  #-----------------------------------------------------------------------------
+  # My own variation on the proposed bug fix
+  config.include RSpec::Rails::ControllerExampleGroup
 end
