@@ -1,4 +1,8 @@
 SampleApp::Application.routes.draw do |map|
+  get "users/new"   # This will be removed in Section 6.3.3.
+
+  match '/signup',  :to => 'users#new'
+
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
