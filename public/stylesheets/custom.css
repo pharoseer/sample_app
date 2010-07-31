@@ -3,7 +3,7 @@
 }
 
 body {
-    background : #cff;
+    background : #024;
 }
 
 header {
@@ -12,14 +12,14 @@ header {
 
 header img {
     padding : 1em;
-    background : #fff;
+    background : #aaa;
 }
 
 section {
     margin-top : 1em;
     font-size : 120%;
     padding : 20px;
-    background : #fff;
+    background : #aaa;
 }
 
 /* Links */
@@ -45,7 +45,7 @@ nav {
 }
 
 nav {
-    background-color : white;
+    background-color : #aaa;
     padding: 0 0.7em;
     white-space : nowrap;
 }
@@ -83,7 +83,7 @@ a.signup_button {
     text-align : center;
     width : 190px;
     color : #fff;
-    background : #060;
+    background : #040;
     font-size : 150%;
     font-weight : bold;
     padding : 20px;

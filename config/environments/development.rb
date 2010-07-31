@@ -16,4 +16,8 @@ SampleApp::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
+  
+  # Possible fix for the rails server crashing when editing static resources as it
+  # is running.
+  config.serve_static_assets = true
 end
